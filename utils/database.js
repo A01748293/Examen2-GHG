@@ -3,10 +3,9 @@ const Sequelize = require('sequelize');
 const {applyRelations} = require('./relations');
 //objeto de conexión
 
-const sequelize = new Sequelize('test','admin','a01748293',{
+const sequelize = new Sequelize('examen_GHG','admin','a01748293',{
     dialect:'mysql',
     host: 'database-1.c1glrx0mcfca.us-east-1.rds.amazonaws.com',        //La mia
-    //host:'database-1.cne03r9weewa.us-east-1.rds.amazonaws.com',
     dialectOptions:{
         options:{
             //Características especiales de la conexión
@@ -21,6 +20,7 @@ const sequelize = new Sequelize('test','admin','a01748293',{
 //Cargar los modelos
 const modelDefiners =[
     require('../models/videojuego'),
+    require('../models/persona'),
     require('../models/consola'),
     require('../models/company'),
     require('../models/consolaVideojuego')

@@ -13,4 +13,10 @@ router.post('/bajaConsola', consolaController.postEliminarConsola);
 //Servicio para actualizar las consola
 router.post('/actualizarConsola',consolaController.postActualizarConsola);
 
+//El examen--------------------------------------
+router.post('/altaPersona',consolaController.postAltaPersona);
+router.get('/consultaPersonas',consolaController.getPersonas);
+//El examen--------------------------------------
+
+
 module.exports = router

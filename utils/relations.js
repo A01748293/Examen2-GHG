@@ -2,6 +2,7 @@
 
 function applyRelations(sequelize){
     console.log(sequelize.models);
+    const Persona = sequelize.models.Persona;
     const Company = sequelize.models.Company;
     const Videojuego = sequelize.models.Videojuego;
     const Consola = sequelize.models.Consola;
