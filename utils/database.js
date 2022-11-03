@@ -3,9 +3,10 @@ const Sequelize = require('sequelize');
 const {applyRelations} = require('./relations');
 //objeto de conexión
 
-const sequelize = new Sequelize('test','admin','Password2026',{
+const sequelize = new Sequelize('test','admin','a01748293',{
     dialect:'mysql',
-    host:'database-1.cne03r9weewa.us-east-1.rds.amazonaws.com',
+    host: 'database-1.c1glrx0mcfca.us-east-1.rds.amazonaws.com',        //La mia
+    //host:'database-1.cne03r9weewa.us-east-1.rds.amazonaws.com',
     dialectOptions:{
         options:{
             //Características especiales de la conexión
